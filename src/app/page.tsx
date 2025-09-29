@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import Image from "next/image";
 import { 
   Github, 
   Linkedin, 
@@ -278,7 +279,7 @@ export default function Home() {
               transition={{ delay: 0.2, duration: 0.8 }}
               className="text-5xl md:text-7xl font-bold text-white mb-6"
             >
-              Hi, I'm{" "}
+              Hi, I&apos;m{" "}
               <span className="bg-gradient-to-r from-gray-300 to-gray-500 bg-clip-text text-transparent">
                 Sravani
               </span>
@@ -369,9 +370,11 @@ export default function Home() {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
                 <div className="flex items-center gap-4">
                   <div className="w-16 h-16 rounded-xl overflow-hidden bg-white p-2 flex items-center justify-center">
-                    <img 
+                    <Image 
                       src="/winwinlabs_logo.jpeg" 
                       alt="WinWin Labs" 
+                      width={64}
+                      height={64}
                       className="w-full h-full object-contain"
                     />
                   </div>
@@ -441,9 +444,11 @@ export default function Home() {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
                 <div className="flex items-center gap-4">
                   <div className="w-16 h-16 rounded-xl overflow-hidden bg-white p-2 flex items-center justify-center">
-                    <img 
+                    <Image 
                       src="/amazon_web_services_logo.jpeg" 
                       alt="Amazon Web Services" 
+                      width={64}
+                      height={64}
                       className="w-full h-full object-contain"
                     />
                   </div>
@@ -513,9 +518,11 @@ export default function Home() {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
                 <div className="flex items-center gap-4">
                   <div className="w-16 h-16 rounded-xl overflow-hidden bg-white p-2 flex items-center justify-center">
-                    <img 
+                    <Image 
                       src="/tata_consultancy_services_logo.jpeg" 
                       alt="Tata Consultancy Services" 
+                      width={64}
+                      height={64}
                       className="w-full h-full object-contain"
                     />
                   </div>
@@ -617,9 +624,11 @@ export default function Home() {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
                 <div className="flex items-center gap-4">
                   <div className="w-20 h-20 rounded-xl overflow-hidden bg-white p-2 flex items-center justify-center">
-                    <img 
+                    <Image 
                       src="/pennstate_logo.jpeg" 
                       alt="Pennsylvania State University" 
+                      width={80}
+                      height={80}
                       className="w-full h-full object-contain"
                     />
                   </div>
@@ -820,7 +829,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-4">Adobe Student Ambassador</h3>
               <p className="text-lg font-semibold mb-2">Student Ambassador</p>
               <p className="text-white/80">The Pennsylvania State University</p>
-              <p className="text-white/70 text-sm mt-4">Representing Adobe's creative and digital solutions to the student community</p>
+              <p className="text-white/70 text-sm mt-4">Representing Adobe&apos;s creative and digital solutions to the student community</p>
             </motion.div>
           </div>
         </div>
@@ -890,9 +899,11 @@ export default function Home() {
                       <div className={`h-48 bg-gradient-to-br ${project.imageBg} flex items-center justify-center relative overflow-hidden`}>
                         {project.imageSrc ? (
                           <div className="w-full h-full flex items-center justify-center">
-                            <img 
+                            <Image 
                               src={project.imageSrc} 
                               alt={project.title}
+                              width={400}
+                              height={192}
                               className="w-full h-full object-cover"
                             />
                           </div>
@@ -976,10 +987,10 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Let's Work Together
+              Let&apos;s Work Together
             </h2>
             <p className="text-xl text-gray-300 mb-12">
-              Ready to bring your ideas to life? Let's discuss your next project!
+              Ready to bring your ideas to life? Let&apos;s discuss your next project!
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
